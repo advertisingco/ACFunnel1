@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-KQ9B9PN8');</script>
+  <!-- End Google Tag Manager -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Advertising Co. | Schedule Your Strategy Call</title>
+  <meta name="description" content="Select an available 30-minute timeslot on our calendar to lock in your custom strategy audit and ad blueprint call.">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body style="display: flex; flex-direction: column; min-height: 100vh; background-color: var(--bg-primary);">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQ9B9PN8"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <!-- Main Booking Area -->
+  <main class="booking-container" style="flex-grow: 1; display: flex; flex-direction: column; justify-content: center;">
+    
+    <div class="booking-header">
+      <div class="mono-tag">STEP 2 OF 3: CALENDAR BOOKING</div>
+      <h1 class="booking-headline">Schedule Your Free Advertising Strategy Call</h1>
+      <p class="booking-subheadline">Select an available date and time slot below to lock in your 1-1 custom flywheel audit. Takes 30 minutes.</p>
+    </div>
+
+    <!-- Calendar Embed Section -->
+    <!-- Set this calendar redirect to thank-you.html after booking. -->
+    <section class="calendar-widget">
+      
+      <!-- Calendar Left Panel: Host & Date selector -->
+      <div class="calendar-left">
+        <div class="meeting-host">
+          <div class="host-avatar">GC</div>
+          <div>
+            <p class="host-name">George Clements</p>
+            <p class="host-title">Founder, Paidhouse.com</p>
+          </div>
+        </div>
+
+        <div class="meeting-info-row">
+          <svg class="meeting-info-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          <span>30 Minutes Strategy Zoom</span>
+        </div>
+
+        <div class="meeting-info-row" style="margin-bottom: 2rem;">
+          <svg class="meeting-info-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 002 2h1.5A1.5 1.5 0 0018 10.5V10a2 2 0 012-2h1.065" />
+          </svg>
+          <span>1-1 Custom Scale Audit & Plan</span>
+        </div>
+
+        <!-- Month navigation header -->
+        <div class="calendar-month-nav">
+          <span class="month-name">July 2026</span>
+          <div style="display: flex; gap: 0.5rem;">
+            <button class="month-btn" type="button" disabled style="opacity: 0.3; cursor: not-allowed;">&larr;</button>
+            <button class="month-btn" type="button" disabled style="opacity: 0.3; cursor: not-allowed;">&rarr;</button>
+          </div>
+        </div>
+
+        <!-- Days of week labels -->
+        <div class="days-of-week">
+          <div>Su</div><div>Mo</div><div>Tu</div><div>We</div><div>Th</div><div>Fr</div><div>Sa</div>
+        </div>
+
+        <!-- Days grid filled by script.js -->
+        <div id="calendar-days-grid" class="days-grid"></div>
+      </div>
+
+      <!-- Calendar Right Panel: Timeslots selector -->
+      <div class="calendar-right">
+        <p id="selected-date-text" class="timeslots-title">Select a Date to View Timeslots</p>
+        
+        <div id="timeslots-list" class="timeslots-list">
+          <p style="color: var(--text-muted); font-size: 0.9rem; text-align: center; margin-top: 3rem;">
+            Click on any highlighted available day on the calendar to load active strategy session slots.
+          </p>
+        </div>
+
+        <div class="booking-confirm-area">
+          <button id="confirm-booking-btn" class="btn btn-full" type="button" disabled style="font-size: 1rem; padding: 0.85rem 1rem;">
+            Select Day & Time to Confirm
+          </button>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- Legal Footer only, no social / external distracting links -->
+  <footer class="footer" style="padding: 2rem 0; border-top: 1px solid var(--border-color); background-color: #020805;">
+    <div class="container text-center">
+      <div class="footer-links" style="justify-content: center; margin-bottom: 1rem;">
+        <a href="privacy.html" class="footer-link">Privacy Policy</a>
+        <a href="terms.html" class="footer-link">Terms of Service</a>
+      </div>
+      <p class="copyright">&copy; 2026 The Advertising Co. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script type="module" src="/script.js"></script>
+</body>
+</html>

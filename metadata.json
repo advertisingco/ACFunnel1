@@ -1,0 +1,6 @@
+{
+  "name": "Three-Page Paid Media Funnel",
+  "description": "A three-page high-converting paid media funnel for agency scale. Includes custom qualification questionnaire, integrated calendar booking page, accept-invite confirmation flow, UTM parameter preservation, and robust cross-page tracking.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
