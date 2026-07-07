@@ -1475,10 +1475,11 @@ a:hover {
 }
 
 .ty-header-icon {
+  display: block;
+  margin: 0 auto 1.5rem auto;
   width: 3.5rem;
   height: 3.5rem;
   color: var(--accent);
-  margin-bottom: 1.5rem;
 }
 
 .ty-steps {
