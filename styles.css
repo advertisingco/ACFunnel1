@@ -197,6 +197,11 @@ a:hover {
   text-align: center;
 }
 
+.hero .mono-tag {
+  font-size: 0.86rem;
+  padding: 0.4rem 0.875rem;
+}
+
 .hero h1 {
   font-size: 3rem;
   line-height: 1.15;
