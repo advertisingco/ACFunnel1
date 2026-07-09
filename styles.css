@@ -390,10 +390,10 @@ a:hover {
 
 /* Social Proof Strip & Spinning Marquee */
 .social-proof-strip {
-  border-top: 1px solid #e1e8e3;
-  border-bottom: 1px solid #e1e8e3;
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
   padding: 2.25rem 0;
-  background-color: #f4f7f5;
+  background-color: transparent;
 }
 
 .marquee-wrapper {
@@ -416,6 +416,7 @@ a:hover {
   max-width: 180px;
   object-fit: contain;
   opacity: 0.85;
+  filter: brightness(0) invert(1);
   transition: opacity var(--transition-fast);
 }
 

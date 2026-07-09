@@ -3,10 +3,27 @@ import path from 'path';
 
 export default defineConfig(() => {
   return {
+    plugins: [
+      {
+        name: 'vsl-v2-rewrite',
+        configureServer(server) {
+          server.middlewares.use((req, res, next) => {
+            if (req.url) {
+              const url = new URL(req.url, 'http://localhost');
+              if (url.pathname === '/vsl-v2') {
+                req.url = '/vsl-v2.html' + url.search;
+              }
+            }
+            next();
+          });
+        }
+      }
+    ],
     build: {
       rollupOptions: {
         input: {
           main: path.resolve(__dirname, 'index.html'),
+          vslv2: path.resolve(__dirname, 'vsl-v2.html'),
           booking: path.resolve(__dirname, 'booking.html'),
           thankyou: path.resolve(__dirname, 'thank-you.html'),
           privacy: path.resolve(__dirname, 'privacy.html'),

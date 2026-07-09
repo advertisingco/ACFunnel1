@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script>
+    var head = document.head;
+    var script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.src = "https://t.paidhouse.com/v1/lst/universal-script?ph=08988d40b0af7f046270748b2099a98ce0a0d2f8e38b13419b5b21c8fcd6e17c&tag=!clicked&ref_url=" + encodeURI(document.URL) ;
+    head.appendChild(script);
+  </script>
+
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -20,71 +28,401 @@
     // Insert pixel schedule/lead call triggers here
   </script>
 </head>
-<body style="display: flex; flex-direction: column; min-height: 100vh; background-color: var(--bg-primary);">
+<body style="background-color: var(--bg-primary); color: #fff; min-height: 100vh; display: flex; flex-direction: column;">
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQ9B9PN8"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
 
-  <!-- Thank You Container -->
-  <main class="container text-center" style="flex-grow: 1; display: flex; flex-direction: column; justify-content: center;">
-    
-    <div class="thank-you-box">
-      <!-- Checked Icon -->
-      <svg class="ty-header-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-      </svg>
+  <!-- Header Section with White Logo -->
+  <header class="header" id="top" style="padding: 1.5rem 0;">
+    <div class="container text-center">
+      <div class="logo-container" style="justify-content: center;">
+        <img class="logo-icon" src="https://assets.cdn.filesafe.space/wBcjSAHmw1f1huTEdV2w/media/6a0c521acc2b26d8ba82b30c.png" alt="The Advertising Co. Logo" style="filter: brightness(0) invert(1);">
+      </div>
+    </div>
+  </header>
 
-      <div class="mono-tag" style="background-color: rgba(239, 68, 68, 0.1); color: #fca3a3; border-color: rgba(239, 68, 68, 0.2);">ACTION REQUIRED</div>
-      
-      <h1 style="font-size: 2rem; margin-bottom: 0.75rem; line-height: 1.25;">
-        You’re Almost Done — Your Call Is Not Confirmed Yet
+  <!-- Main Container -->
+  <main style="flex-grow: 1;">
+    <!-- Step 1 Header Warning -->
+    <div class="text-center" style="margin-top: 1.5rem; margin-bottom: 1.5rem; padding: 0 1rem;">
+      <h1 style="font-size: 2.25rem; color: #fff; font-family: var(--font-display); font-weight: 700; margin: 0 auto; display: flex; align-items: center; justify-content: center; gap: 0.5rem; flex-wrap: wrap; text-transform: none; letter-spacing: normal;">
+        <span style="color: #4ade80; display: inline-flex; align-items: center; gap: 0.5rem;">⚠️ Wait!</span> Your Call Is Not Yet Confirmed
       </h1>
-      <p style="font-size: 1.1rem; color: var(--text-secondary);">
-        Follow the 2 steps below to lock in your spot.
-      </p>
-
-      <!-- Exact Two Step Structure -->
-      <div class="ty-steps">
-        <div class="ty-step">
-          <div class="ty-step-num">1</div>
-          <div>
-            <h2 class="ty-step-title">Open your email inbox</h2>
-            <p class="ty-step-desc">Find the calendar invitation we just sent you from The Advertising Co.</p>
-          </div>
-        </div>
-
-        <div class="ty-step">
-          <div class="ty-step-num">2</div>
-          <div>
-            <h2 class="ty-step-title">Click Yes or Accept</h2>
-            <p class="ty-step-desc">Accept the invitation. This confirms your call and adds it to your calendar.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Reinforcement Line inside a notice banner -->
-      <div class="ty-warning-banner">
-        ⚠️ If you do not accept the invite, your time slot may be released.
-      </div>
-
-      <!-- Help Line -->
-      <p class="ty-help-line">
-        Can’t find the email? Check your spam, promotions, or updates folder.
-      </p>
-
     </div>
 
+    <!-- Step 1 Badge -->
+    <div class="text-center" style="margin-bottom: 1.5rem;">
+      <div style="display: inline-block; background-color: rgba(34, 197, 94, 0.1); border: 1px solid rgba(34, 197, 94, 0.3); color: #22c55e; padding: 0.4rem 1.25rem; border-radius: 50px; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase;">STEP 1: WATCH THE SHORT VIDEO</div>
+    </div>
+
+    <!-- Main Instruction Header -->
+    <div class="text-center" style="padding: 0 1rem; margin-bottom: 2.5rem;">
+      <h2 style="font-size: 2.35rem; color: #fff; font-family: var(--font-display); line-height: 1.25; font-weight: 700; max-width: 850px; margin: 0 auto; text-transform: none;">
+        Please <span style="color: #22c55e;">Watch The Short Video</span> Below To Understand Exactly How Our Offer And Pricing Works <span style="color: #22c55e;">BEFORE</span> Your Call...
+      </h2>
+    </div>
+
+    <!-- Video Wrapper containing Vidalytics player with the green bar header -->
+    <div style="max-width: 800px; margin: 0 auto 3rem auto; border-radius: 12px; border: 3px solid #22c55e; overflow: hidden; box-shadow: 0 0 25px rgba(34, 197, 94, 0.2); background-color: #000; width: calc(100% - 2rem);">
+      <div style="background-color: #22c55e; color: #020805; font-weight: 800; text-align: center; padding: 0.55rem; font-size: 0.85rem; letter-spacing: 0.05em; display: flex; align-items: center; justify-content: center; gap: 0.4rem;">
+        <span>🔊</span> PRESS PLAY TO WATCH
+      </div>
+      
+      <!-- Vidalytics Embed -->
+      <div id="vidalytics_embed_5xc9ctCERG0dywda" style="width: 100%; position:relative; padding-top: 56.25%;"></div>
+      <script type="text/javascript">
+      (function (v, i, d, a, l, y, t, c, s) {
+          y='_'+d.toLowerCase();c=d+'L';if(!v[d]){v[d]={};}if(!v[c]){v[c]={};}if(!v[y]){v[y]={};}var vl='Loader',vli=v[y][vl],vsl=v[c][vl + 'Script'],vlf=v[c][vl + 'Loaded'],ve='Embed';
+          if (!vsl){vsl=function(u,cb){
+              if(t){cb();return;}s=i.createElement("script");s.type="text/javascript";s.async=1;s.src=u;
+              if(s.readyState){s.onreadystatechange=function(){if(s.readyState==="loaded"||s.readyState=="complete"){s.onreadystatechange=null;vlf=1;cb();}};}else{s.onload=function(){vlf=1;cb();};}
+              i.getElementsByTagName("head")[0].appendChild(s);
+          };}
+          vsl(l+'loader.min.js',function(){if(!vli){var vlc=v[c][vl];vli=new vlc();}vli.loadScript(l+'player.min.js',function(){var vec=v[d][ve];t=new vec();t.run(a);});});
+      })(window, document, 'Vidalytics', 'vidalytics_embed_5xc9ctCERG0dywda', 'https://fast.vidalytics.com/embeds/3_QxqspR/5xc9ctCERG0dywda/');
+      </script>
+    </div>
+
+    <!-- Step 1 Button CTA & Trust Block -->
+    <div style="text-align: center; margin-bottom: 1rem; padding: 0 1rem;">
+      <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank" class="btn" style="padding: 1.25rem 2.5rem; font-size: 1.1rem; font-weight: 700; text-transform: uppercase; background-color: #22c55e; color: #020805; border: none; box-shadow: 0 4px 15px rgba(34, 197, 94, 0.4); display: inline-block; border-radius: 6px; letter-spacing: 0.02em;">CONFIRM MEETING ON GOOGLE CALENDAR</a>
+    </div>
+    
+    <!-- Trust Strip -->
+    <div class="trust-strip" style="margin-top: 1rem; margin-bottom: 4rem;">
+      <div class="trust-info">
+        <div class="stars">★★★★★</div>
+        <p class="trust-text">23+ Agency Reviews & Case Studies</p>
+      </div>
+    </div>
+
+
+    <!-- Step 2 Section -->
+    <div class="text-center" style="margin-bottom: 1.5rem;">
+      <div style="display: inline-block; background-color: rgba(34, 197, 94, 0.1); border: 1px solid rgba(34, 197, 94, 0.3); color: #22c55e; padding: 0.4rem 1.25rem; border-radius: 50px; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase;">STEP 2: CONFIRM THE EVENT ON YOUR CALENDAR</div>
+    </div>
+
+    <!-- Calendar confirmation image -->
+    <div style="max-width: 700px; margin: 0 auto 3rem auto; border-radius: 8px; overflow: hidden; border: 1px solid var(--border-color); box-shadow: 0 10px 30px rgba(0,0,0,0.5); width: calc(100% - 2rem);">
+      <img src="https://assets.cdn.filesafe.space/wBcjSAHmw1f1huTEdV2w/media/6a0cbb3c031360478273c81a.png" alt="Confirm event on calendar screenshot" style="width: 100%; height: auto; display: block;">
+    </div>
+
+    <!-- Step 2 Button CTA & Trust Block -->
+    <div style="text-align: center; margin-bottom: 1rem; padding: 0 1rem;">
+      <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank" class="btn" style="padding: 1.25rem 2.5rem; font-size: 1.1rem; font-weight: 700; text-transform: uppercase; background-color: #22c55e; color: #020805; border: none; box-shadow: 0 4px 15px rgba(34, 197, 94, 0.4); display: inline-block; border-radius: 6px; letter-spacing: 0.02em;">CONFIRM MEETING ON GOOGLE CALENDAR</a>
+    </div>
+
+    <!-- Trust Strip -->
+    <div class="trust-strip" style="margin-top: 1rem; margin-bottom: 6rem;">
+      <div class="trust-info">
+        <div class="stars">★★★★★</div>
+        <p class="trust-text">23+ Agency Reviews & Case Studies</p>
+      </div>
+    </div>
+
+
+    <!-- Proof Section (Real testimonials as seen in screenshots) -->
+    <section class="section-padding" style="border-top: 1px solid var(--border-color); background-color: rgba(7, 21, 14, 0.15);">
+      <div class="container">
+        <div class="text-center" style="margin-bottom: 3.5rem;">
+          <h2 style="font-size: 2.25rem;">Results From Serious Agencies</h2>
+        </div>
+
+        <!-- Video Testimonials Section -->
+        <div class="text-center" style="margin-top: 2rem; margin-bottom: 2.5rem;">
+          <h3 style="font-size: 1.75rem; margin-top: 0.5rem; font-family: var(--font-display);">Hear Directly From Our Partners</h3>
+        </div>
+        
+        <div class="video-grid" style="margin-bottom: 5rem;">
+          <!-- Kushal Bogga -->
+          <div class="proof-card" style="padding: 1.25rem;">
+            <div style="position: relative; width: 100%; aspect-ratio: 16 / 9; border-radius: 8px; overflow: hidden; margin-bottom: 1rem; border: 1px solid var(--border-color);">
+              <iframe src="https://www.youtube.com/embed/H9cE280KTiU" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <p class="proof-author" style="font-size: 1.1rem; margin-bottom: 0.25rem;">Kushal Bogga</p>
+            <p class="proof-role" style="font-size: 0.8rem; color: var(--accent);">Founder, SEO Agency</p>
+          </div>
+          
+          <!-- Daniel Feldman -->
+          <div class="proof-card" style="padding: 1.25rem;">
+            <div style="position: relative; width: 100%; aspect-ratio: 16 / 9; border-radius: 8px; overflow: hidden; margin-bottom: 1rem; border: 1px solid var(--border-color);">
+              <iframe src="https://www.youtube.com/embed/MwpQHwxrsVM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <p class="proof-author" style="font-size: 1.1rem; margin-bottom: 0.25rem;">Daniel Feldman</p>
+            <p class="proof-role" style="font-size: 0.8rem; color: var(--accent);">Founder, Ads Agency</p>
+          </div>
+
+          <!-- Nico Lorenz -->
+          <div class="proof-card" style="padding: 1.25rem;">
+            <div style="position: relative; width: 100%; aspect-ratio: 16 / 9; border-radius: 8px; overflow: hidden; margin-bottom: 1rem; border: 1px solid var(--border-color);">
+              <iframe src="https://www.youtube.com/embed/8YHhSs-zLOw" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <p class="proof-author" style="font-size: 1.1rem; margin-bottom: 0.25rem;">Nico Lorenz</p>
+            <p class="proof-role" style="font-size: 0.8rem; color: var(--accent);">Founder, Ads Agency</p>
+          </div>
+
+          <!-- Adam Scanlon -->
+          <div class="proof-card" style="padding: 1.25rem;">
+            <div style="position: relative; width: 100%; aspect-ratio: 16 / 9; border-radius: 8px; overflow: hidden; margin-bottom: 1rem; border: 1px solid var(--border-color);">
+              <iframe src="https://www.youtube.com/embed/Otub23TaZBE" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <p class="proof-author" style="font-size: 1.1rem; margin-bottom: 0.25rem;">Adam Scanlon</p>
+            <p class="proof-role" style="font-size: 0.8rem; color: var(--accent);">Agency Partner</p>
+          </div>
+        </div>
+
+        <!-- Image Testimonials Section -->
+        <div class="text-center" style="margin-top: 4rem; margin-bottom: 2.5rem;">
+          <h3 style="font-size: 1.75rem; margin-top: 0.5rem; font-family: var(--font-display);">Real Slack Wins From Inside the Flywheel</h3>
+        </div>
+        
+        <div class="screenshot-grid" style="margin-bottom: 3rem;">
+          <!-- Sean Miller -->
+          <div class="proof-card" style="padding: 1.5rem; display: flex; flex-direction: column; justify-content: space-between;">
+            <div style="width: 100%; border-radius: 8px; overflow: hidden; margin-bottom: 1.25rem; border: 1px solid var(--border-color); background-color: #030c08; box-shadow: 0 4px 12px rgba(0,0,0,0.3);">
+              <img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/wBcjSAHmw1f1huTEdV2w/media/69f09d03eecc3af70ae370f5.png" alt="Sean Miller Email Marketing Agency proof" style="width: 100%; height: auto; display: block; object-fit: contain;">
+            </div>
+            <div>
+              <p class="proof-author" style="font-size: 1.1rem; margin-bottom: 0.25rem;">Sean Miller</p>
+              <p class="proof-role" style="font-size: 0.8rem; color: var(--accent);">Founder, Email Marketing Agency</p>
+            </div>
+          </div>
+
+          <!-- Daniel Feldman -->
+          <div class="proof-card" style="padding: 1.5rem; display: flex; flex-direction: column; justify-content: space-between;">
+            <div style="width: 100%; border-radius: 8px; overflow: hidden; margin-bottom: 1.25rem; border: 1px solid var(--border-color); background-color: #030c08; box-shadow: 0 4px 12px rgba(0,0,0,0.3);">
+              <img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/wBcjSAHmw1f1huTEdV2w/media/69f09d0340534248c587132e.png" alt="Daniel Feldman Ads Agency proof" style="width: 100%; height: auto; display: block; object-fit: contain;">
+            </div>
+            <div>
+              <p class="proof-author" style="font-size: 1.1rem; margin-bottom: 0.25rem;">Daniel Feldman</p>
+              <p class="proof-role" style="font-size: 0.8rem; color: var(--accent);">Founder, Ads Agency</p>
+            </div>
+          </div>
+
+          <!-- Sean Cavanaugh -->
+          <div class="proof-card" style="padding: 1.5rem; display: flex; flex-direction: column; justify-content: space-between;">
+            <div style="width: 100%; border-radius: 8px; overflow: hidden; margin-bottom: 1.25rem; border: 1px solid var(--border-color); background-color: #030c08; box-shadow: 0 4px 12px rgba(0,0,0,0.3);">
+              <img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/wBcjSAHmw1f1huTEdV2w/media/69f09d03d696846120d1a5bd.png" alt="Sean Cavanaugh Tiktok Shop Agency proof" style="width: 100%; height: auto; display: block; object-fit: contain;">
+            </div>
+            <div>
+              <p class="proof-author" style="font-size: 1.1rem; margin-bottom: 0.25rem;">Sean Cavanaugh</p>
+              <p class="proof-role" style="font-size: 0.8rem; color: var(--accent);">Founder, Tiktok Shop Agency</p>
+            </div>
+          </div>
+
+          <!-- Joe G -->
+          <div class="proof-card" style="padding: 1.5rem; display: flex; flex-direction: column; justify-content: space-between;">
+            <div style="width: 100%; border-radius: 8px; overflow: hidden; margin-bottom: 1.25rem; border: 1px solid var(--border-color); background-color: #030c08; box-shadow: 0 4px 12px rgba(0,0,0,0.3);">
+              <img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/wBcjSAHmw1f1huTEdV2w/media/69f09d03011ebfb8f9076e89.png" alt="Joe G Email Marketing Agency proof" style="width: 100%; height: auto; display: block; object-fit: contain;">
+            </div>
+            <div>
+              <p class="proof-author" style="font-size: 1.1rem; margin-bottom: 0.25rem;">Joe G</p>
+              <p class="proof-role" style="font-size: 0.8rem; color: var(--accent);">Founder, Email Marketing Agency</p>
+            </div>
+          </div>
+
+          <!-- Fred -->
+          <div class="proof-card" style="padding: 1.5rem; display: flex; flex-direction: column; justify-content: space-between;">
+            <div style="width: 100%; border-radius: 8px; overflow: hidden; margin-bottom: 1.25rem; border: 1px solid var(--border-color); background-color: #030c08; box-shadow: 0 4px 12px rgba(0,0,0,0.3);">
+              <img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/wBcjSAHmw1f1huTEdV2w/media/69fba0c64ef91f2f59348bb6.png" alt="Fred Local Business Agency proof" style="width: 100%; height: auto; display: block; object-fit: contain;">
+            </div>
+            <div>
+              <p class="proof-author" style="font-size: 1.1rem; margin-bottom: 0.25rem;">Fred</p>
+              <p class="proof-role" style="font-size: 0.8rem; color: var(--accent);">Founder, Local Business Agency</p>
+            </div>
+          </div>
+
+          <!-- Michael Rathman -->
+          <div class="proof-card" style="padding: 1.5rem; display: flex; flex-direction: column; justify-content: space-between;">
+            <div style="width: 100%; border-radius: 8px; overflow: hidden; margin-bottom: 1.25rem; border: 1px solid var(--border-color); background-color: #030c08; box-shadow: 0 4px 12px rgba(0,0,0,0.3);">
+              <img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/wBcjSAHmw1f1huTEdV2w/media/69fba1207c0e0f0a9e5aa847.jpg" alt="Michael Rathman Email Agency proof" style="width: 100%; height: auto; display: block; object-fit: contain;">
+            </div>
+            <div>
+              <p class="proof-author" style="font-size: 1.1rem; margin-bottom: 0.25rem;">Michael Rathman</p>
+              <p class="proof-role" style="font-size: 0.8rem; color: var(--accent);">Founder, Email Agency</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Accordion section -->
+    <section class="section-padding" style="background-color: rgba(7, 21, 14, 0.25); border-top: 1px solid var(--border-color);">
+      <div class="container text-center">
+        <!-- FAQ Badge -->
+        <div style="display: inline-block; background-color: rgba(34, 197, 94, 0.1); border: 1px solid rgba(34, 197, 94, 0.3); color: #22c55e; padding: 0.4rem 1.25rem; border-radius: 50px; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: 1.5rem;">HAVE ANY QUESTIONS?</div>
+        
+        <h2 style="font-size: 2.25rem; margin-bottom: 3.5rem;">Frequently Asked Questions</h2>
+
+        <div class="faq-box" style="text-align: left;">
+          <!-- Q1 -->
+          <div class="faq-item">
+            <button class="faq-trigger">
+              <span class="faq-question">How much adspend will this require?</span>
+              <svg class="faq-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
+              </svg>
+            </button>
+            <div class="faq-content">
+              <div class="faq-inner">
+                <p style="margin-bottom: 0.75rem;">It completely depends on how fast you want to move - adspend = speed, that is it.</p>
+                <p style="margin-bottom: 0.75rem;">We have clients executing our strategy who are getting results with as little as $10/day.</p>
+                <p style="margin-bottom: 0.75rem;">It's all because we use a strategy called the profile funnel for clients who have a low budget.</p>
+                <p style="margin-bottom: 0.75rem;">Of course, $100/day in adspend is optimal, but it is not required.</p>
+                <p>Spending $10/day will get you much better lead quality & faster results than cold email, dream 100 or upwork ever could.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Q2 -->
+          <div class="faq-item">
+            <button class="faq-trigger">
+              <span class="faq-question">What is this and how does it work?</span>
+              <svg class="faq-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
+              </svg>
+            </button>
+            <div class="faq-content">
+              <div class="faq-inner">
+                <p style="margin-bottom: 0.75rem;">We have one simple offer: we build your funnel for you, write your ads and help you launch. Then, we consult with you 1-1 until your paid ads system is signing you clients predictably.</p>
+                <p style="margin-bottom: 0.75rem;">This is the best of both worlds. We take care of the time consuming 'launch phase', then we actually train you on how to manage and run this paid ads system in-house so that you're not beholden to an agency for the rest of your life.</p>
+                <p>The whole point of this offer is that you work with us, then leave with a working paid ads system after 3-6 months.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Q3 -->
+          <div class="faq-item">
+            <button class="faq-trigger">
+              <span class="faq-question">Is this another course?</span>
+              <svg class="faq-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
+              </svg>
+            </button>
+            <div class="faq-content">
+              <div class="faq-inner">
+                No. We do have pre-recorded SOP's and training material - but 99% of your progress will come from the initial DFY setup, the slack channel that you will have with George & his team for Q&A, and the 1-1 calls with George.
+              </div>
+            </div>
+          </div>
+
+          <!-- Q4 -->
+          <div class="faq-item">
+            <button class="faq-trigger">
+              <span class="faq-question">Do you run an active agency? Or are you just slinging coaching.</span>
+              <svg class="faq-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
+              </svg>
+            </button>
+            <div class="faq-content">
+              <div class="faq-inner">
+                <p style="margin-bottom: 0.75rem;">My agency paidhouse.com did $1.500.000 last year in revenue exclusively from paid ads acquisition. I still run this agency to this day, go check it out alongside the YouTube channel we have with 2k+ subscribers.</p>
+                <p style="margin-bottom: 0.75rem;">You see, most guru's selling ads or marketing coaching have only ever scaled their own coaching business with ads.</p>
+                <p>Scaling a complex DFY agency to a completely separate, unsophisticated buyer market is a very different thing.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Q5 -->
+          <div class="faq-item">
+            <button class="faq-trigger">
+              <span class="faq-question">I already have ads that are working - is this still for me?</span>
+              <svg class="faq-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
+              </svg>
+            </button>
+            <div class="faq-content">
+              <div class="faq-inner">
+                <p style="margin-bottom: 0.75rem;">In 99% of cases, yes.</p>
+                <p style="margin-bottom: 0.75rem;">There is usually some issue that is preventing you from scaling these ads.</p>
+                <p style="margin-bottom: 0.75rem;">Lack of knowledge around creative production, funnel building, sales process etc.</p>
+                <p style="margin-bottom: 0.75rem;">Otherwise, you would already be spending thousands of dollars a day profitably, and certainly not bothering to scroll down this deeply into our funnel.</p>
+                <p style="margin-bottom: 0.75rem;">Book your call, and we will personally audit your ad account live to find weaknesses and show you where we'd make improvements.</p>
+                <p>If it makes sense from there, we can work together.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Q6 -->
+          <div class="faq-item">
+            <button class="faq-trigger">
+              <span class="faq-question">How much does this cost?</span>
+              <svg class="faq-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
+              </svg>
+            </button>
+            <div class="faq-content">
+              <div class="faq-inner">
+                <p style="margin-bottom: 0.75rem;">We offer a boutique consulting service - some people will need help with the entire funnel buildout, others will just need smaller optimisations.</p>
+                <p style="margin-bottom: 0.75rem;">Some people will need to work with us for 3 months, some for 6 months, some will just need a one off consulting call.</p>
+                <p style="margin-bottom: 0.75rem;">The point of the call is so we can diagnose your situation, and make you a custom offer that suits you.</p>
+                <p>That being said, nothing that will be offered on the call will be less than a low 4 figure investment.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Q7 -->
+          <div class="faq-item">
+            <button class="faq-trigger">
+              <span class="faq-question">What revenue range must I be to qualify for this?</span>
+              <svg class="faq-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
+              </svg>
+            </button>
+            <div class="faq-content">
+              <div class="faq-inner">
+                <p style="margin-bottom: 0.75rem;">Agencies doing $5k/month - $500k/month are usually a perfect fit for this.</p>
+                <p style="margin-bottom: 0.75rem;">We work with a huge range of agencies in a variety of different situations.</p>
+                <p>The most important thing is that you can afford to invest at least $10/day in adspend consistently for 3 months at least.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Q8 -->
+          <div class="faq-item">
+            <button class="faq-trigger">
+              <span class="faq-question">How do I know paid ads will actually work for me?</span>
+              <svg class="faq-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
+              </svg>
+            </button>
+            <div class="faq-content">
+              <div class="faq-inner">
+                <p style="margin-bottom: 0.75rem;">Paid ads work. That is just a fact. Meta has spent billions producing the most advanced advertising platform in the world.</p>
+                <p style="margin-bottom: 0.75rem;">The question you should be asking yourself is: how well do paid ads work?</p>
+                <p style="margin-bottom: 0.75rem;">The answer is: that depends on your offer, ads, landing page, sales process etc.</p>
+                <p>Our job is to ensure that your paid ads work as well as they possibly can.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
   </main>
 
   <!-- Legal Footer -->
-  <footer class="footer" style="padding: 2rem 0; border-top: 1px solid var(--border-color); background-color: #020805;">
-    <div class="container text-center">
-      <div class="footer-links" style="justify-content: center; margin-bottom: 1rem;">
-        <a href="privacy.html" class="footer-link">Privacy Policy</a>
-        <a href="terms.html" class="footer-link">Terms of Service</a>
+  <footer class="footer" style="padding: 3rem 0; border-top: 1px solid var(--border-color); background-color: #020805;">
+    <div class="container">
+      <div class="footer-inner">
+        <div>
+          <span class="logo-text" style="font-size: 1.2rem; display: block; margin-bottom: 0.5rem;">The Advertising Co.</span>
+          <p style="font-size: 0.85rem; max-width: 400px; color: var(--text-muted); margin: 0 auto;">
+            We help marketing agencies install high-performing paid advertising systems that scale profitably.
+          </p>
+        </div>
+        
+        <div class="footer-links">
+          <a href="privacy.html" class="footer-link">Privacy Policy</a>
+          <a href="terms.html" class="footer-link">Terms of Service</a>
+        </div>
+
+        <div class="copyright">
+          &copy; 2026 The Advertising Co. All rights reserved.
+        </div>
       </div>
-      <p class="copyright">&copy; 2026 The Advertising Co. All rights reserved.</p>
     </div>
   </footer>
 
